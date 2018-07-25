@@ -77,6 +77,7 @@ def unbind_device_token():
         raise ResponseMeta(400, "invalid param")
 
 
+
     User.reset_user_device_token(rds, appid, uid,
                                  device_token, pushkit_device_token,
                                  ng_device_token, xg_device_token, 
