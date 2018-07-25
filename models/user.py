@@ -70,8 +70,6 @@ class User(object):
                                gcm_device_token, jp_device_token):
         now = int(time.time())
         key = "users_%d_%d"%(appid, uid)
-        s = "123%d"%key
-        print(s)
 
         if device_token:
             obj = {
