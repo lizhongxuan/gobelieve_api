@@ -36,10 +36,7 @@ def bind_device_token():
     print("device_token type:",type(device_token))
     print("xm_device_token type:", type(xm_device_token))
 
-    apns = "apns@%s@%s"%(device_token, pushkit_device_token)
-    xm = "xm@%s"%(xm_device_token)
-    print("apns:",apns)
-    print("xm:", xm)
+
 
     if not device_token and not pushkit_device_token \
        and not ng_device_token and not xg_device_token \
